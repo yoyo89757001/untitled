@@ -8,7 +8,7 @@ x_data = np.linspace(-0.5, 0.5, 400)[:, np.newaxis] # 样本值
 #符合正太分布的比列0。02的随机值 np.random.normal
 noise = np.random.normal(0, 0.02, x_data.shape)
 y_data = np.square(x_data)+noise  #x的平方加上一个实数。弧形函数图形 ，样本y的值
-
+print(y_data.shape)
 #定义2个占位符
 x = tf.placeholder(tf.float32,[None, 1])
 y = tf.placeholder(tf.float32,[None, 1])
